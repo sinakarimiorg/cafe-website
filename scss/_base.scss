@@ -1,0 +1,123 @@
+$white-color: #ffffff;
+$primary-color: #BC6C25;
+$secondary-color: #DDA15E;
+$section-bg-color: #b78752;
+$custom-btn-bg-color: #BC6C25;
+$custom-btn-bg-hover-color: #DDA15E;
+$dark-color: #000000;
+$p-color: #717275;
+$border-color: #7fffd4;
+$link-hover-color: #E76F51;
+
+$body-font-family: 'Plus Jakarta Sans', sans-serif;
+
+$h1-font-size: 68px;
+$h2-font-size: 46px;
+$h3-font-size: 32px;
+$h4-font-size: 28px;
+$h5-font-size: 24px;
+$h6-font-size: 22px;
+$p-font-size: 20px;
+$btn-font-size: 16px;
+$form-btn-font-size: 18px;
+$menu-font-size: 16px;
+
+$border-radius-large: 100px;
+$border-radius-medium: 20px;
+$border-radius-small: 10px;
+
+$font-weight-thin: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $white-color;
+    font-family: $body-font-family;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $dark-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-weight-bold;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+h6 {
+    font-size: $h6-font-size;
+}
+
+p {
+    color: $p-color;
+    font-size: $p-font-size;
+    font-weight: $font-weight-light;
+}
+
+ul li {
+    color: $p-color;
+    font-size: $p-font-size;
+    font-weight: $font-weight-light;
+}
+
+a,
+button {
+    touch-action: manipulation;
+    transition: all 0.3s;
+}
+
+a {
+    display: inline-block;
+    color: $primary-color;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $link-hover-color;
+}
+
+b,
+strong {
+    font-weight: $font-weight-bold;
+}
+
+@mixin backgroundCss{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

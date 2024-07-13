@@ -1,13 +1,147 @@
-img{
-    height: 40px;
-    width: 50px;
-    vertical-align: middle;
-}
-div{
-    display: flex;
+/*---------------------------------------
+  NAVIGATION BAR & OFFCANVAS              
+-----------------------------------------*/
+#sticky-wrapper {
+    height: 154px;
+    position: absolute;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    .navbar {
+        background: transparent;
+        z-index: 999999;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .container {
+            background: rgba(0, 0, 0, 0.35);
+            border-radius: $border-radius-medium;
+            padding: 15px 30px;
+        }
+    }
+
+    .navbar-brand {
+        font-size: $h4-font-size !important;
+        font-weight: $font-weight-bold !important;
+        display: block !important;
+        color: $white-color !important;
+
+        &:hover {
+            color: $secondary-color !important;
+        }
+
+        img {
+            width: 48px;
+            height: auto;
+            margin-right: 10px;
+            border: 1px solid $white-color;
+            padding: 5px;
+            border-radius: 50%;
+            filter: brightness(0) invert(1);
+        }
+
+        span {
+            vertical-align: middle;
+        }
+
+
+    }
+
+    .navbar-toggle-btn {
+        display: none;
+        color: $white-color;
+        padding: 5px;
+        background-color: transparent;
+        border: none;
+        font-size: $h4-font-size;
+    }
+
+
+    #navbarNav {
+        .navbar-expand-lg .navbar-nav .nav-link {
+            border-radius: $border-radius-large;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            display: inline-block;
+            color: $white-color;
+            font-size: $menu-font-size;
+            font-weight: $font-weight-bold;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            color: $secondary-color;
+        }
+    }
+
+    .custom-btn {
+        padding: 10px 20px;
+        text-decoration: none;
+    }
 }
 
-h1{
+/*---------------------------------------
+  header        
+-----------------------------------------*/
+.header-section {
+    background-image: url("../images/friends.jpg");
+    @include backgroundCss;
+    background-color: $dark-color;
+    position: relative;
+    overflow: hidden;
+    min-height: 620px;
+    text-align: center;
+
+    &:after {
+        background-color: rgba(0, 0, 0, 0.65);
+        border-radius: $border-radius-medium;
+        content: "";
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-55%, -50%) rotate(45deg);
+        width: 250px;
+        height: 350px;
+        pointer-events: none;
+    }
+
+    h1 {
+        color: $white-color;
+        font-size: $h1-font-size;
+    }
+
+    .small-text {
+        color: $secondary-color;
+    }
+
+    .container {
+        position: relative;
+        z-index: 999;
+    }   
+}
+
+.opening-hours-list {
     margin: 0;
-    vertical-align: middle;
+    padding: 0;
+}
+
+.opening-hours-list li {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: $btn-font-size;
+    font-weight: $font-weight-normal;
+    margin-bottom: 10px;
+}
+
+.opening-hours-list li .underline {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 35%;
+    height: 1px;
+    margin: auto 15px 0 15px;
 }
