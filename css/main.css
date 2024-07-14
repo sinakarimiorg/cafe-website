@@ -70,7 +70,7 @@ button {
 a {
   display: inline-block;
   color: #BC6C25;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -150,6 +150,11 @@ strong {
 
 .custom-btn-italic {
   font-style: italic;
+}
+
+.provider-name {
+  text-decoration: none;
+  color: #BC6C25;
 }
 
 /*---------------------------------------
@@ -286,10 +291,6 @@ strong {
 .about-section .about-img-info h4 {
   color: #ffffff;
 }
-.about-section .provider-name {
-  text-decoration: none;
-  color: #BC6C25;
-}
 
 /*---------------------------------------
   OUR MENU              
@@ -337,52 +338,145 @@ strong {
 }
 
 /*---------------------------------------
-    REVIEWS              
-  -----------------------------------------*/
-.reviews-section {
+  CONTACT               
+-----------------------------------------*/
+.contact-section {
   background-color: #7c5c52;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgb(188, 108, 37));
 }
-
-.reviews-block {
-  background-color: #b78752;
-  border-radius: 20px;
-  position: relative;
-  overflow: hidden;
+.contact-section .custom-form .form-control {
+  color: #717275;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  box-shadow: none;
+  outline: none;
+  transition: all 0.3s;
 }
-
-.reviews-block .border-top {
-  border-top-color: rgba(255, 255, 255, 0.35) !important;
+.contact-section .custom-form .form-control:hover, .contact-section .custom-form .form-control:focus {
+  background: #BC6C25;
+  border-color: transparent;
 }
-
-.reviews-block-image-wrap {
-  background-image: url("../images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 30px;
-}
-
-.reviews-block-image {
-  border-radius: 100px;
-  width: 65px;
-  height: 65px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-right: 10px;
-}
-
-.reviews-block-info {
-  padding: 20px 30px;
-}
-
-.reviews-block-info p {
-  font-size: 16px;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.reviews-group i {
+.contact-section .custom-form .form-label {
   color: #ffffff;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.contact-section .custom-form button[type=submit] {
+  background: #BC6C25;
+  border: none;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s;
+  margin-bottom: 0;
+}
+.contact-section .custom-form button[type=submit]:hover, .contact-section .custom-form button[type=submit]:focus {
+  background: #ffffff;
+  border-color: transparent;
+  color: #BC6C25;
+}
+.contact-section .custom-form input::-webkit-input-placeholder,
+.contact-section .custom-form textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.contact-section .contact-form .form-control {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+.contact-section .google-map {
+  border-radius: 20px;
+  filter: grayscale(100);
+}
+
+/*---------------------------------------
+    SITE FOOTER              
+  -----------------------------------------*/
+.site-footer {
+  background-color: #BC6C25;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.site-footer strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+.site-footer p,
+.site-footer .site-footer-link {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+}
+.site-footer .site-footer-link {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.site-footer .site-footer-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: underline !important;
+}
+.site-footer .opening-hours-list {
+  margin: 0;
+  padding: 0;
+}
+.site-footer .opening-hours-list li {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.site-footer .opening-hours-list li .underline {
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 35%;
+  height: 1px;
+  margin: auto 15px 0 15px;
+}
+
+/*---------------------------------------
+    SOCIAL ICON               
+  -----------------------------------------*/
+.social-icon {
+  margin: 0;
+  padding: 0;
+}
+.social-icon .social-icon-item {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+}
+.social-icon .social-icon-link {
+  background: #BC6C25;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 16px;
+  display: block;
+  margin: 0 5px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  transition: background 0.2s, color 0.2s;
+}
+.social-icon .social-icon-link:hover {
+  background: #ffffff;
+  color: #BC6C25;
+}
+.social-icon .social-icon-link span {
+  display: block;
+}
+
+.copyright-text {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+}
+.copyright-text a {
+  color: #4D3821;
+  font-weight: 400;
+}
+.copyright-text a:hover {
+  font-weight: 700;
 }
 
 @media screen and (min-width: 991px) {

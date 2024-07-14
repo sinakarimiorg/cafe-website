@@ -152,11 +152,6 @@
             color: $white-color;
         }
     }
-
-    .provider-name {
-        text-decoration: none;
-        color: $primary-color;
-    }
 }
 
 
@@ -214,49 +209,173 @@
 
 
 /*---------------------------------------
-    REVIEWS              
-  -----------------------------------------*/
-.reviews-section {
+  CONTACT               
+-----------------------------------------*/
+.contact-section {
     background-color: #7c5c52;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(188, 108, 37, 1));
+
+    .custom-form {
+        .form-control {
+            color: $p-color;
+            border-radius: $border-radius-small;
+            margin-bottom: 30px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            box-shadow: none;
+            outline: none;
+            transition: all 0.3s;
+
+            &:hover,
+            &:focus {
+                background: $primary-color;
+                border-color: transparent;
+            }
+        }
+
+        .form-label {
+            color: $white-color;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        button[type="submit"] {
+            background: $custom-btn-bg-color;
+            border: none;
+            border-radius: $border-radius-large;
+            color: $white-color;
+            font-size: $form-btn-font-size;
+            font-weight: $font-weight-bold;
+            transition: all 0.3s;
+            margin-bottom: 0;
+
+            &:hover,
+            &:focus {
+                background: $white-color;
+                border-color: transparent;
+                color: $primary-color;
+            }
+        }
+
+        input::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder {
+            color: $white-color;
+        }
+    }
+
+    .contact-form .form-control {
+        background-color: transparent;
+        border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .google-map {
+        border-radius: $border-radius-medium;
+        filter: grayscale(100);
+    }
 }
 
-.reviews-block {
-    background-color: $section-bg-color;
-    border-radius: $border-radius-medium;
-    position: relative;
-    overflow: hidden;
+
+/*---------------------------------------
+    SITE FOOTER              
+  -----------------------------------------*/
+.site-footer {
+    background-color: $primary-color;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    strong {
+        color: $white-color;
+        font-weight: $font-weight-bold;
+    }
+
+    p,
+    .site-footer-link {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: $btn-font-size;
+    }
+
+    .site-footer-link {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: $btn-font-size;
+        transition: all 0.3s;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: underline !important;
+        }
+    }
+
+
+    .opening-hours-list {
+        margin: 0;
+        padding: 0;
+
+        li {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: $btn-font-size;
+            font-weight: $font-weight-normal;
+            margin-bottom: 10px;
+
+            .underline {
+                background-color: rgba(255, 255, 255, 0.75);
+                width: 35%;
+                height: 1px;
+                margin: auto 15px 0 15px;
+            }
+        }
+    }
 }
 
-.reviews-block .border-top {
-    border-top-color: rgba(255, 255, 255, 0.35) !important;
+
+
+/*---------------------------------------
+    SOCIAL ICON               
+  -----------------------------------------*/
+.social-icon {
+    margin: 0;
+    padding: 0;
+
+    .social-icon-item {
+        list-style: none;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .social-icon-link {
+        background: $primary-color;
+        border-radius: $border-radius-large;
+        color: $white-color;
+        font-size: $menu-font-size;
+        display: block;
+        margin: 0 5px;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        transition: background 0.2s, color 0.2s;
+
+        &:hover {
+            background: $white-color;
+            color: $primary-color;
+        }
+
+        span {
+            display: block;
+        }
+    }
 }
 
-.reviews-block-image-wrap {
-    background-image: url('../images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 30px;
-}
 
-.reviews-block-image {
-    border-radius: $border-radius-large;
-    width: 65px;
-    height: 65px;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-.reviews-block-info {
-    padding: 20px 30px;
-}
-
-.reviews-block-info p {
-    font-size: $btn-font-size;
-    font-style: italic;
+.copyright-text {
     color: rgba(255, 255, 255, 0.75);
-}
+    font-size: $menu-font-size;
 
-.reviews-group i {
-    color: $white-color;
+    a {
+        color: $bg-color;
+        font-weight: $font-weight-normal;
+
+        &:hover {
+            font-weight: $font-weight-bold;
+        }
+    }
 }
