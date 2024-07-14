@@ -134,7 +134,7 @@
 .about-section {
     background-color: $bg-color;
 
-    .about-section-img {
+    &-img {
         border-radius: $border-radius-medium;
         width: 100%;
         height: 100%;
@@ -142,21 +142,121 @@
     }
 
     .about-img-info {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(188, 108, 37, 1));
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(188, 108, 37, 1));
         border-radius: $border-radius-medium;
         bottom: 0;
         height: auto;
         padding: 40px;
+
+        h4 {
+            color: $white-color;
+        }
     }
 
-    .about-img-info h4 {
-        color: $white-color;
-    }
-
-    .provider-name{
+    .provider-name {
         text-decoration: none;
         color: $primary-color;
     }
 }
 
 
+/*---------------------------------------
+  OUR MENU              
+-----------------------------------------*/
+.menu-section {
+    background-image: url('/images/happy-waitress.jpg');
+    @include backgroundCss;
+    background-position: top;
+
+    .menu-block-wrap {
+        background: rgba(0, 0, 0, 0.65);
+        border-radius: $border-radius-medium;
+        padding: 45px;
+    }
+
+    .menu-block {
+        .border-top {
+            border-top-color: rgba(255, 255, 255, 0.35) !important;
+        }
+
+        h6 {
+            color: $white-color;
+        }
+
+        small {
+            color: rgba(255, 255, 255, 0.35);
+        }
+
+        strong {
+            color: $secondary-color;
+        }
+
+        .badge {
+            background-color: $primary-color;
+            font-size: 12px;
+            position: relative;
+            bottom: 4px;
+            padding-bottom: 6px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -5px;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-right: 10px solid $primary-color;
+            }
+        }
+    }
+}
+
+
+/*---------------------------------------
+    REVIEWS              
+  -----------------------------------------*/
+.reviews-section {
+    background-color: #7c5c52;
+}
+
+.reviews-block {
+    background-color: $section-bg-color;
+    border-radius: $border-radius-medium;
+    position: relative;
+    overflow: hidden;
+}
+
+.reviews-block .border-top {
+    border-top-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.reviews-block-image-wrap {
+    background-image: url('../images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+.reviews-block-image {
+    border-radius: $border-radius-large;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.reviews-block-info {
+    padding: 20px 30px;
+}
+
+.reviews-block-info p {
+    font-size: $btn-font-size;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.reviews-group i {
+    color: $white-color;
+}
