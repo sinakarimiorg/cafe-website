@@ -92,7 +92,6 @@
   header        
 -----------------------------------------*/
 .header-section {
-    background-image: url("../images/cafe-glass.jpg");
     @include backgroundCss;
     background-color: $dark-color;
     position: relative;
@@ -160,7 +159,6 @@
   OUR MENU              
 -----------------------------------------*/
 .menu-section {
-    background-image: url('/images/happy-waitress.jpg');
     @include backgroundCss;
     background-position: top;
 

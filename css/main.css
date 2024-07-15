@@ -234,7 +234,6 @@ strong {
   header        
 -----------------------------------------*/
 .header-section {
-  background-image: url("../images/cafe-glass.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -296,7 +295,6 @@ strong {
   OUR MENU              
 -----------------------------------------*/
 .menu-section {
-  background-image: url("/images/happy-waitress.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

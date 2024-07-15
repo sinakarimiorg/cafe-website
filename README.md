@@ -24,7 +24,7 @@
 ## Features
 - Cool and appropriate UI and UX for a Cafe website
 - Full Responsive page
-- relevant Color combination for Customers
+- Relevant color combination for Customers
 
 ## Installation
 Let's make it easy! Just download this template, use it on your project. <br>
