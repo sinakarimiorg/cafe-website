@@ -72,7 +72,6 @@ a {
   color: #BC6C25;
   text-decoration: none !important;
 }
-
 a:hover {
   color: #E76F51;
 }
@@ -158,7 +157,7 @@ strong {
 }
 
 /*---------------------------------------
-  NAVIGATION BAR & OFFCANVAS              
+  NAVIGATION BAR            
 -----------------------------------------*/
 #sticky-wrapper {
   height: 154px;
@@ -169,6 +168,7 @@ strong {
   left: 0;
 }
 #sticky-wrapper .navbar {
+  width: 100%;
   background: transparent;
   z-index: 999999;
   padding-top: 30px;
@@ -208,12 +208,12 @@ strong {
   border: none;
   font-size: 28px;
 }
-#sticky-wrapper #navbarNav .navbar-expand-lg .navbar-nav .nav-link {
+#sticky-wrapper .navbarNav .navbar-expand-lg .navbar-nav .nav-link {
   border-radius: 100px;
   margin: 10px;
   padding: 10px;
 }
-#sticky-wrapper #navbarNav .navbar-nav .nav-link {
+#sticky-wrapper .navbarNav .navbar-nav .nav-link {
   display: inline-block;
   color: #ffffff;
   font-size: 16px;
@@ -221,8 +221,8 @@ strong {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-#sticky-wrapper #navbarNav .navbar-nav .nav-link.active,
-#sticky-wrapper #navbarNav .navbar-nav .nav-link:hover {
+#sticky-wrapper .navbarNav .navbar-nav .nav-link.active,
+#sticky-wrapper .navbarNav .navbar-nav .nav-link:hover {
   color: #DDA15E;
 }
 #sticky-wrapper .custom-btn {
@@ -319,14 +319,14 @@ strong {
 .menu-section .menu-block strong {
   color: #DDA15E;
 }
-.menu-section .menu-block .badge {
+.menu-section .badge {
   background-color: #BC6C25;
   font-size: 12px;
   position: relative;
   bottom: 4px;
   padding-bottom: 6px;
 }
-.menu-section .menu-block .badge:before {
+.menu-section .badge:before {
   content: "";
   position: absolute;
   top: 0;
@@ -479,8 +479,152 @@ strong {
   font-weight: 700;
 }
 
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 62px;
+  }
+}
 @media screen and (min-width: 991px) {
+  h1 {
+    font-size: 54px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .hero-section {
+    padding-top: 148px;
+    padding-bottom: 100px;
+  }
+  .navbar-brand,
+  .navbar-brand:hover {
+    font-size: var(--h5-font-size);
+  }
+  .navbar-expand-lg .navbar-nav {
+    padding-bottom: 20px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .navbar .custom-btn {
+    margin-bottom: 10px;
+  }
+  .booking-form {
+    padding: 45px;
+  }
+  .contact-section .container {
+    width: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 35px;
+  }
+  .site-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .header-section {
     height: 100vh;
+  }
+  .navbar .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    margin-top: 0;
+    pointer-events: auto;
+  }
+  .timeline::after {
+    left: 31px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar-toggle-btn {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar-toggle-btn {
+    display: block !important;
+  }
+  .custom-btn {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+  .menu-block-wrap,
+  .reviews-block-image-wrap,
+  .reviews-block-info {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 578px) {
+  .navbar-toggle-btn {
+    display: block !important;
+  }
+  .navbar .container,
+  .sticky-wrapper.is-sticky .container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbar-toggle-btn {
+    display: block !important;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  .hero-section::after {
+    width: 200px;
+    height: 200px;
+  }
+  .booking-form {
+    padding: 35px;
+  }
+  .opening-hours-list li {
+    font-size: 12px;
+  }
+  .reviews-block-image-wrap {
+    flex-direction: column;
+  }
+  .reviews-block-image {
+    margin-bottom: 15px;
+  }
+  .timeline-container {
+    padding-left: 55px;
+  }
+  .timeline-container::before {
+    left: 44px;
+    border: medium solid white;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent white transparent transparent;
+  }
+  .timeline-container-left::before,
+  .timeline-container-right::before {
+    top: 13px;
   }
 }/*# sourceMappingURL=main.css.map */

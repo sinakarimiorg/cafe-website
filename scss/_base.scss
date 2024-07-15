@@ -106,10 +106,12 @@ a {
     display: inline-block;
     color: $primary-color;
     text-decoration: none !important;
-}
 
-a:hover {
-    color: $link-hover-color;
+    &:hover {
+        color: $link-hover-color;
+    }
+
+
 }
 
 b,
@@ -117,7 +119,7 @@ strong {
     font-weight: $font-weight-bold;
 }
 
-@mixin backgroundCss{
+@mixin backgroundCss {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
